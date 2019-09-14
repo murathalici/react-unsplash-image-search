@@ -22,7 +22,7 @@ class ImageCard extends Component {
   render() {
     const { description, urls } = this.props.image;
     return (
-      <div style={{ gridRowEnd: `span ${this.state.spans}` }}>
+      <div className="ui card">
         <img ref={this.imageRef} src={urls.regular} alt={description} />
       </div>
     );
